@@ -1,0 +1,17 @@
+###添加购物车
+Get Http://localhost:8090/AddTrolley/6 HTTP/1.1
+
+###查询购物车
+Get Http://localhost:8090/trolleys HTTP/1.1
+
+###更新购物车
+PUT Http://localhost:8090/trolleys/62 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "联想ThinkPad E14"
+}
+
+###删除一个商品
+DELETE Http://localhost:8090/trolleys/2 HTTP/1.1
